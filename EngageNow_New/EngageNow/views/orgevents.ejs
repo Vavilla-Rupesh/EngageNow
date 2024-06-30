@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrgEvents</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <nav class="smallnav" id="smallnav">
+        <div class="main" id="main">
+          <div class="mainopen" id="mainopen">
+            <div class="violet open" id="violet"></div>
+            <div class="purple open" id="purple"></div>
+            <div class="blue open" id="blue"></div>
+          </div>
+          <div class="childnav" id="childnav">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="orgevents.html">Add Events</a></li>
+                <li><a href="myevent.html">My Events</a></li>
+                <li><a href="login.html">SignUp/Login</a></li>
+              </ul>
+        </div>
+      </nav>
+    <nav class="bignav">
+        <h1>EngageNow</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="orgevents.html">Add Events</a></li>
+            <li><a href="myevent.html">My Events</a></li>
+            <li><a href="login.html">SignUp/Login</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form class="container" action="./events.html">
+            <div class="card" id="card">
+                <div class="front">
+                    <div class="form-container">
+                        <h2>Add Events</h2>
+                        <input type="text" class="form-control" placeholder="Event Name">
+                        <input type="date" class="form-control" placeholder="Event Date">
+                        <input type="text" class="form-control" placeholder="Event Time">
+                        <input type="text" class="form-control" placeholder="Event Location">
+                        <input type="text" class="form-control" placeholder="Event Description">
+                        <button type="submit" class="submit-button">Add</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+    <script src="/scripts/nav.js"></script>
+</body>
+</html>

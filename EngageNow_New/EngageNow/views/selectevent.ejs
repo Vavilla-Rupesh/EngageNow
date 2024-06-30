@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Event</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <nav class="smallnav" id="smallnav">
+        <div class="main" id="main">
+          <div class="mainopen" id="mainopen">
+            <div class="violet open" id="violet"></div>
+            <div class="purple open" id="purple"></div>
+            <div class="blue open" id="blue"></div>
+          </div>
+          <div class="childnav" id="childnav">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">SignUp/Login</a></li>
+              </ul>
+        </div>
+      </nav>
+      <nav class="bignav">
+        <h1>EngageNow</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">SignUp/Login</a></li>
+        </ul>
+      </nav>
+    <main>
+        <section class="eventcard" id="events">
+            <div class="event-details">
+                <img src="https://picsum.photos/200/200" alt="Event 1">
+                <h3>Event 1</h3>
+                <h3>Date: 29/06/2024</h3>
+                <h3>Time: 10:00 AM</h3>
+                <h3>Location: XYZ</h3>
+                <div class="submit-buttons">
+                    <button class="submit-button" onclick='alert("Event Registered Successfully")'>Register as a Volunteer</button>
+                    <button class="submit-button" onclick='alert("Event Registered Successfully")'>Register as a Customer</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/scripts/nav.js"></script>
+</body>
+</html>

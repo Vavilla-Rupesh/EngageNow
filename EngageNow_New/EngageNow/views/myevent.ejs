@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Events</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css' rel='stylesheet' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js'></script>
+</head>
+<body>
+    <nav class="smallnav" id="smallnav">
+        <div class="main" id="main">
+          <div class="mainopen" id="mainopen">
+            <div class="violet open" id="violet"></div>
+            <div class="purple open" id="purple"></div>
+            <div class="blue open" id="blue"></div>
+          </div>
+          <div class="childnav" id="childnav">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">SignUp/Login</a></li>
+              </ul>
+        </div>
+      </nav>
+    <nav class="bignav">
+        <h1>EngageNow</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">SignUp/Login</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div id='calendar'></div>
+    </section>
+    <div class="regevents"><a href="./regevents.html"><button>Go to Registered Events</button></a></div>
+    <section class="events" id="events">
+        <% events.forEach(event => { %>
+            <a href="./selectevent.html" class="event" data-date="<%= event.event_date %>">
+                <div class="event-details">
+                    <img src="https://picsum.photos/200/200" alt="<%= event.event_name %>">
+                    <h3><%= event.event_name %></h3>
+                    <h3>Date: <%= formatDate(event.event_date) %></h3>
+                    <h3>Time: <%= event.event_time %></h3>
+                    <h3>Location: <%= event.event_location %></h3>
+                </div>
+            </a>
+        <% }); %>
+    </section>
+    <script src="/scripts/nav.js"></script>
+    <script src="/scripts/calendar.js"></script>
+</body>
+</html>

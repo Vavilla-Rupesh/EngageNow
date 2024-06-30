@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+    <nav class="smallnav" id="smallnav">
+        <div class="main" id="main">
+            <div class="mainopen" id="mainopen">
+                <div class="violet open" id="violet"></div>
+                <div class="purple open" id="purple"></div>
+                <div class="blue open" id="blue"></div>
+            </div>
+            <div class="childnav" id="childnav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="regevents.html">Registered Events</a></li>
+                    <li><a href="login.html">SignUp/Login</a></li>
+                </ul>
+            </div>
+    </nav>
+    <nav class="bignav">
+        <h1>EngageNow</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="regevents.html">Registered Events</a></li>
+            <li><a href="login.html">SignUp/Login</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        
+            <div class="card" id="card">
+                <div class="front">
+                    <form method="post" action="/login">
+                    <div class="form-container">
+                        
+                        <h2>Login</h2>
+                        <input type="text" class="form-control" name="username" id="username" placeholder="Username">
+                        <input type="password" class="form-control" id="password" name="password"
+                            placeholder="Password">
+                        <button type="submit" class="submit-button">Login</button>
+                        <button type="button" class="flip-button" onclick="flipCard()">Don't have an account? Sign
+                            Up</button>
+                        <button type="submit" class="submit-button">Sign in with <img src="./google1.svg"
+                                alt=""></button>
+                    </div>
+                </form>
+                </div>
+                <div class="back">
+                    <form method="post" action="/signup">
+                    <div class="form-container">
+                        <h2>Sign Up</h2>
+                        <input type="text" class="form-control" name="username" id="username" placeholder="Username">
+                        <input type="password" class="form-control" id="password" name="password"
+                            placeholder="Password">
+                        <select name="role" id="role" class="form-control" onclick="showExtraFields()">
+                            <option value="resident">Resident</option>
+                            <option value="organizer">Organizer</option>
+                        </select>
+                   
+                        <button type="submit" class="submit-button">SignUp</button>
+                        <button type="button" class="flip-button" onclick="flipCard()">Already have an account?
+                            Login</button>
+                        <button type="submit" class="submit-button">Sign Up with <img src="./google1.svg" alt="">
+                        </button>
+                    </div>
+                </form>
+                </div>
+            </div>
+      
+        <script src="/scripts/nav.js"></script>
+    </main>
+</body>
+
+</html>
